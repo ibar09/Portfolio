@@ -47,3 +47,16 @@
       opacity: 1;
     }
   }   
+
+  hr.separator {
+    border-top: 1px solid #ffffff61;
+    margin: 70px auto 55px;
+    max-width: 40%;
+}
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+}

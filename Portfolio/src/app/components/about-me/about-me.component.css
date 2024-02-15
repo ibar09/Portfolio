@@ -1,0 +1,24 @@
+h1 span {
+    color: #ffb400 ;
+}
+
+ h1 {
+    font-size: 56px;
+    font-weight: 900!important;
+    color: #fff;
+    text-transform: uppercase;
+   
+}
+.title-bg {
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    color: hsla(0,0%,100%,.07);
+}
