@@ -8,6 +8,7 @@ import { ExperienceBoxComponent } from './components/experience-page/experience-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DescriptionPageComponent } from './components/description-page/description-page.component';
 
+
 @NgModule({
   declarations: [AppComponent, ExperiencePageComponent, ExperienceBoxComponent, DescriptionPageComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
