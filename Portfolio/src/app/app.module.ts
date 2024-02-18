@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DescriptionPageComponent } from './components/description-page/description-page.component';
 
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     ExperienceBoxComponent,
     DescriptionPageComponent,
     AboutMeComponent,
+    PortfolioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
