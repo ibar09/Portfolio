@@ -10,7 +10,7 @@ export class ExperiencePageComponent {
    exps: Expinfo [];
   constructor(){
   this.exps =[
-    new Expinfo("exp1","2022-2023","desc"  ),
+    new Expinfo("exp1","2022-2023","descs"  ),
     new Expinfo("exp2","2022-2023","desc"  ),
     new Expinfo("exp3","2022-2023","desc"  ),
     new Expinfo("exp4","2022-2023","desc"  ),
