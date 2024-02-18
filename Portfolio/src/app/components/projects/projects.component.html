@@ -1,1 +1,16 @@
-<p>projects works!</p>
+<div class="container" id="container">
+    <h1 >MY <span>PORTFOLIO</span></h1>
+    <span  class="title-bg">WORKS</span>
+              <div class="cardtab">
+                <div class="row ">
+                <div class="col-4 cards" *ngFor="let project of projects">
+                    <div style="display: flex;">
+                <app-project-card [project]="project"></app-project-card>
+            </div>
+                </div>
+            </div>  
+
+
+
+   
+</div>
