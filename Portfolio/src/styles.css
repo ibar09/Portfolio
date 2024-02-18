@@ -1,5 +1,8 @@
 body {
   background-color: black;
   color: white;
-  
+}
+.dark-modal .modal-content {
+  background-color: rgb(39, 39, 39);
+  border-radius: 30px;
 }

@@ -1,0 +1,12 @@
+.modal-title {
+  color: #ffb400;
+  text-transform: uppercase;
+  padding: 10px 0 20px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 33px;
+  margin: 0;
+}
+.modal-header {
+  text-align: center;
+}
