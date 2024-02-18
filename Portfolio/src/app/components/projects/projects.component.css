@@ -1,3 +1,57 @@
+h1 span {
+  color: rgb(255, 180, 0);
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 900 !important;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-bg {
+  font-size: 120px;
+  left: 0;
+  letter-spacing: 10px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 7%;
+  text-transform: uppercase;
+  font-weight: 800;
+  transform: translateY(-50%);
+  color: hsla(0, 0%, 100%, 0.07);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#container {
+  min-height: 100vh;
+  height: auto;
+  padding-top: 2%;
+}
+
+.cardtab {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+
+.cards {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 15%;
+  width: 100%;
+  background-color: #ffb400;
+}
+
 .modal-title {
   color: #ffb400;
   text-transform: uppercase;

@@ -7,7 +7,9 @@ h1 {
   font-weight: 900 !important;
   color: #fff;
   text-transform: uppercase;
+  text-align: center; /* Ajout de la propriété pour centrer horizontalement */
 }
+
 .title-bg {
   font-size: 110px;
   left: 0;
@@ -15,11 +17,14 @@ h1 {
   line-height: 0.7;
   position: absolute;
   right: 0;
-  top: 5%;
+  top: 7%;
   text-transform: uppercase;
   font-weight: 800;
   transform: translateY(-50%);
   color: hsla(0, 0%, 100%, 0.07);
+  align-items: center;
+  display: flex; 
+  justify-content: center; 
 }
 .item {
   margin: 30px 0px;
@@ -102,3 +107,7 @@ h1 {
   border-width: 3px;
   border-color: #ffb400;
 }
+#container
+{min-height: 100vh ;
+height: auto;
+padding-top: 2%;}
