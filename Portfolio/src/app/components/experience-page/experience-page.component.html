@@ -1,16 +1,22 @@
 <div class="container" id="container">
   <h2 style="margin: 30px 33%">EXPERIENCE & EDUCATION</h2>
 
-
-
-<div  *ngFor="let exp of exps">
-  <div class="row" style="margin-bottom: 50px">
-    <div class="col" style="display: inline-block">
-      <app-experience-box [title]="exp.title" [periode]="exp.date" [description]="exp.desc"></app-experience-box>
-    </div>
-    <div class="col" style="display: inline-block">
-      <app-experience-box [title]="exp.title" [periode]="exp.date" [description]="exp.desc"></app-experience-box>
+  <div *ngFor="let exp of exps">
+    <div class="row" style="margin-bottom: 50px">
+      <div class="col" style="display: inline-block">
+        <app-experience-box
+          [title]="exp.title"
+          [periode]="exp.date"
+          [description]="exp.desc"
+        ></app-experience-box>
+      </div>
+      <div class="col" style="display: inline-block">
+        <app-experience-box
+          [title]="exp.title"
+          [periode]="exp.date"
+          [description]="exp.desc"
+        ></app-experience-box>
+      </div>
     </div>
   </div>
 </div>
-
