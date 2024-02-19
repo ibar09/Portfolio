@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
-import {  project } from 'src/app/model/project';
+import { Component, TemplateRef } from '@angular/core';
+import { project } from 'src/app/model/project';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent {
   projects: project[];
