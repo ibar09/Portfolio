@@ -23,8 +23,8 @@ h1 {
   transform: translateY(-50%);
   color: hsla(0, 0%, 100%, 0.07);
   align-items: center;
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
 }
 .item {
   margin: 30px 0px;
@@ -104,10 +104,17 @@ h1 {
   border-radius: 50%;
 }
 .skills {
-  border-width: 3px;
-  border-color: #ffb400;
+  padding-top: 30px;
 }
-#container
-{min-height: 100vh ;
-height: auto;
-padding-top: 2%;}
+#container {
+  min-height: 100vh;
+  height: auto;
+  padding-top: 2%;
+}
+.skill {
+  width: 80%;
+  object-fit: cover;
+}
+.label {
+  text-align: center;
+}
