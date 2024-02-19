@@ -106,7 +106,8 @@ export class ProjectsComponent {
   openVerticallyCentered(content: TemplateRef<any>) {
     this.modalService.open(content, {
       centered: true,
-      modalDialogClass: 'dark-modal',
+      windowClass: 'dark-modal',
+      size: 'xl',
     });
   }
 }
