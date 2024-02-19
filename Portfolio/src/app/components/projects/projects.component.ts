@@ -18,7 +18,7 @@ export class ProjectsComponent {
         '2022',
         '',
         'description god of war ',
-        ['thumbnail.jpg'],
+        ['thumbnail.jpg','image 3.jpg','image 2.jpg'],
         []
       ),
       new project(
@@ -28,7 +28,7 @@ export class ProjectsComponent {
         '2022',
         '',
         'description god of war ',
-        ['thumbnail.jpg'],
+        ['thumbnail.jpg','image 3.jpg','image 2.jpg'],
         []
       ),
       new project(
@@ -38,7 +38,7 @@ export class ProjectsComponent {
         '2022',
         '',
         'description god of war ',
-        ['thumbnail.jpg'],
+        ['thumbnail.jpg','image 3.jpg','image 2.jpg'],
         []
       ),
       new project(
@@ -48,7 +48,7 @@ export class ProjectsComponent {
         '2022',
         '',
         'description god of war ',
-        ['thumbnail.jpg'],
+        ['thumbnail.jpg','image 3.jpg','image 2.jpg'],
         []
       ),
       new project(
@@ -58,7 +58,7 @@ export class ProjectsComponent {
         '2022',
         '',
         'description god of war ',
-        ['thumbnail.jpg'],
+        ['thumbnail.jpg','image 3.jpg','image 2.jpg'],
         []
       ),
       new project(
@@ -68,7 +68,7 @@ export class ProjectsComponent {
         '2022',
         '',
         'description god of war ',
-        ['thumbnail.jpg'],
+        ['thumbnail.jpg','image 3.jpg','image 2.jpg'],
         []
       ),
       new project(
@@ -78,7 +78,7 @@ export class ProjectsComponent {
         '2022',
         '',
         'description god of war ',
-        ['thumbnail.jpg'],
+        ['thumbnail.jpg','image 3.jpg','image 2.jpg'],
         []
       ),
       new project(
@@ -88,7 +88,7 @@ export class ProjectsComponent {
         '2022',
         '',
         'description god of war ',
-        ['thumbnail.jpg'],
+        ['thumbnail.jpg','image 3.jpg','image 2.jpg'],
         []
       ),
       new project(
@@ -98,7 +98,7 @@ export class ProjectsComponent {
         '2022',
         '',
         'description god of war ',
-        ['thumbnail.jpg'],
+        ['thumbnail.jpg','image 3.jpg','image 2.jpg'],
         []
       ),
     ];
