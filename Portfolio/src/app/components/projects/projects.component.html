@@ -42,10 +42,12 @@
                                     style="cursor: none; color: #ffb400">{{project.links}}</a>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row pt-3">
+                            <div id="containerdesc">
                             <p>
                                 <b class="key">Description: </b> {{project.description}}
                             </p>
+                        </div>
                         </div>
                     </div>
                     <div class="col-7" style="padding: 30px ;padding-bottom:40px;">
@@ -53,12 +55,12 @@
 
 
 
-                              <ng-template class="images" ngbSlide *ngFor="let images of project.pathImage">
+                              <ng-template class="images" ngbSlide *ngFor="let image of project.pathImage">
                                 <div class="picsum-img-wrapper">
-                                    <img src="assets/projects image/{{project.title}}/{{images}}" alt="Random first slide" />
+                                    <img src="assets/projects image/{{project.title}}/{{image}}" alt="Random first slide" />
                                 </div>
                                 <div class="carousel-caption">
-                                    <h3> {{images}}First slide label</h3>
+                                    <h3> First slide label</h3>
                                     <p>
                                         Nulla vitae elit libero, a pharetra augue mollis interdum.
                                     </p>
