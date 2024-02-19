@@ -9,105 +9,26 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ProjectsComponent {
   projects: project[];
-  constructor(private modalService: NgbModal) {
-    this.projects = [
-      new project(
-        'god of war 1',
-        'game dev',
-        'unity',
-        '2022',
-        '',
-        'description god of war ',
-        [],
-        []
-      ),
-      new project(
-        'god of war 2',
-        'game dev',
-        'unity',
-        '2022',
-        '',
-        'description god of war ',
-        [],
-        []
-      ),
-      new project(
-        'god of war 3',
-        'game dev',
-        'unity',
-        '2022',
-        '',
-        'description god of war ',
-        [],
-        []
-      ),
-      new project(
-        'god of war 4',
-        'game dev',
-        'unity',
-        '2022',
-        '',
-        'description god of war ',
-        [],
-        []
-      ),
-      new project(
-        'god of war 5',
-        'game dev',
-        'unity',
-        '2022',
-        '',
-        'description god of war ',
-        [],
-        []
-      ),
-      new project(
-        'god of war 6',
-        'game dev',
-        'unity',
-        '2022',
-        '',
-        'description god of war ',
-        [],
-        []
-      ),
-      new project(
-        'god of war 7',
-        'game dev',
-        'unity',
-        '2022',
-        '',
-        'description god of war ',
-        [],
-        []
-      ),
-      new project(
-        'god of war 8',
-        'game dev',
-        'unity',
-        '2022',
-        '',
-        'description god of war ',
-        [],
-        []
-      ),
-      new project(
-        'god of war 9',
-        'game dev',
-        'unity',
-        '2022',
-        '',
-        'description god of war ',
-        [],
-        []
-      ),
-    ];
+  constructor() {
+    this.projects=[
+            new project("god of war","game dev","unity","2022","","description god of war ",["thumbnail.jpg"],[]),
+            new project("spider","game dev","unity","2022","","description god of war ",["thumbnail.jpg"],[]),
+            new project("the last of us","game dev","unity","2022","","description god of war ",["thumbnail.jpg"],[]),
+            new project("valorent","game dev","unity","2022","","description god of war ",["thumbnail.jpg"],[]),
+            new project("god of war","game dev","unity","2022","","description god of war ",["thumbnail.jpg"],[]),
+            new project("the last of us","game dev","unity","2022","","description god of war ",["thumbnail.jpg"],[]),
+            new project("god of war","game dev","unity","2022","","description god of war ",["thumbnail.jpg"],[]),
+            new project("spider","game dev","unity","2022","","description god of war ",["thumbnail.jpg"],[]),
+            new project("the last of us","game dev","unity","2022","","description god of war ",["thumbnail.jpg"],[]),
+
+
+
+
+
+
+
+
+    ]
   }
-  openVerticallyCentered(content: TemplateRef<any>) {
-    this.modalService.open(content, {
-      centered: true,
-      windowClass: 'dark-modal',
-      size: 'xl',
-    });
-  }
+
 }

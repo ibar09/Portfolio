@@ -14,8 +14,8 @@ export class project {
         period="",
         links="",
         description="",
-        pathImage:[],
-        pathVid:[]) 
+        pathImage: string[] = [],
+        pathVid: string[] = [],) 
         
         {
       this.title=title;
