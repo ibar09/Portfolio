@@ -11,34 +11,24 @@ export class ExperiencePageComponent {
   constructor() {
     this.exps = [
       new Expinfo(
-        'exp1',
-        '2022-2023',
-        'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
+        'Full Stack Developer Internship - Avidea',
+        '2023',
+        'Spring Boot, Anguler, PostgreSQL, Java, TypeScript'
       ),
       new Expinfo(
-        'exp2',
-        '2022-2023',
-        'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
+        'Engineering Degree - INSAT',
+        '2020-2025',
+        'Engineering Degree in Computer networks and telecommunications'
       ),
       new Expinfo(
-        'exp3',
-        '2022-2023',
-        'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
+        'Game Programmer - Upwork',
+        '2023-present',
+        'Unity game Engine, Google Admob, C#, Firebase, Android Studio'
       ),
       new Expinfo(
-        'exp4',
-        '2022-2023',
-        'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
-      ),
-      new Expinfo(
-        'exp5',
-        '2022-2023',
-        'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
-      ),
-      new Expinfo(
-        'exp6',
-        '2022-2023',
-        'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
+        'Baccalaureate Degree',
+        'August-2020',
+        'Baccalaureate Degree in Mathematics'
       ),
     ];
   }

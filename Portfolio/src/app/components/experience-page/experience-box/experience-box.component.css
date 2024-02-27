@@ -20,3 +20,24 @@
   width: 1px; /* Adjust height of the vertical line */
   background-color: rgb(54, 54, 54);
 }
+@media screen and (max-width: 768px) {
+  .vertical-line {
+    display: none;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+  .period {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .icon-container {
+    display: none;
+  }
+}

@@ -1,73 +1,93 @@
 <div class="container" id="container">
-    <h1>MY <span>PORTFOLIO</span></h1>
-    <span class="title-bg">WORKS</span>
-    <div class="cardtab">
-        <div class="row">
-            <div class="col-4 cards" *ngFor="let project of projects">
-                <div style="display: flex">
-                    <app-project-card [project]="project" (click)="openVerticallyCentered(content)"></app-project-card>
-                </div>
-      
-
+  <h1>MY <span>PORTFOLIO</span></h1>
+  <span class="title-bg">WORKS</span>
+  <div class="cardtab">
+    <div class="row">
+      <div class="col-4 cards" *ngFor="let project of projects">
+        <div style="display: flex">
+          <app-project-card
+            [project]="project"
+            (click)="openVerticallyCentered(content)"
+          ></app-project-card>
+        </div>
 
         <ng-template #content let-modal>
-            <div>
-                <div class="row" style="position: relative">
-                    <h4 class="modal-title" id="modal-basic-title">{{project.title}}</h4>
-                    <hr class="separator" />
+          <div>
+            <div class="row" style="position: relative">
+              <h4 class="modal-title" id="modal-basic-title">
+                {{ project.title }}
+              </h4>
+              <hr class="separator" />
 
-                    <button type="button" class="btn-close btn-close-white" aria-label="Close"
-                        style="position: absolute; right: 40px; top: 20px"
-                        (click)="modal.dismiss('Cross click')"></button>
-                </div>
-                <div class="row">
-                    <div class="col-5" style="padding: 30px">
-                        <div class="row open-sans-font">
-                            <div class="col-12 col-sm-6 mb-2">
-                                <b class="key">Project : </b>
-                                <span class="ft-wt-600 uppercase">{{project.category}}</span>
-                            </div>
-                            <div class="col-12 col-sm-6 mb-2">
-                                <b class="key">Period :</b>
-                                <span class="ft-wt-600 uppercase">{{project.period}}</span>
-                            </div>
-                            <div class="col-12 col-sm-6 mb-2">
-                                <b class="key">Language :</b>
-                                <span class="ft-wt-600 uppercase">{{project.stack}}</span>
-                            </div>
-                            <div class="col-12 col-sm-6 mb-2">
-                                <b class="key">Preview :</b>
-                                <a class="preview-link" target="_blank" rel="noopener noreferrer nofollow"
-                                    href="{{project.links}}"
-                                    style="cursor: none; color: #ffb400">{{project.links}}</a>
-                            </div>
-                        </div>
-                        <div class="row pt-3">
-                            <div id="containerdesc">
-                            <p>
-                                <b class="key">Description: </b> {{project.description}}
-                            </p>
-                        </div>
-                        </div>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                aria-label="Close"
+                style="position: absolute; right: 40px; top: 20px"
+                (click)="modal.dismiss('Cross click')"
+              ></button>
+            </div>
+            <div class="row content">
+              <div class="col-5 details" style="padding: 30px">
+                <div class="row open-sans-font">
+                  <div class="col-12 col-sm-6 mb-2">
+                    <b class="key">Project : </b>
+                    <span class="ft-wt-600 uppercase">{{
+                      project.category
+                    }}</span>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-2">
+                    <b class="key">Period :</b>
+                    <span class="ft-wt-600 uppercase">{{
+                      project.period
+                    }}</span>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-2">
+                    <b class="key">Tools : </b>
+                    <span class="ft-wt-600 uppercase">{{ project.stack }}</span>
+                  </div>
+                  <div class="col-12 col-sm-6 mb-2">
+                    <div *ngIf="project.links.length > 0 ? true : false">
+                      <b class="key">Preview : </b>
+                      <a
+                        class="cursor-pointer"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        href="{{ project.links }}"
+                        style="cursor: none; color: #ffb400"
+                        >Game Link</a
+                      >
                     </div>
-                    <div class="col-7" style="padding: 30px ;padding-bottom:40px;">
-                        <ngb-carousel>
+                  </div>
+                </div>
+                <div class="row pt-3">
+                  <div id="containerdesc">
+                    <p>
+                      <b class="key">Description: </b> {{ project.description }}
+                    </p>
+                    <p><b class="key">Roles: </b> {{ project.roles }}</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-7 pics"
+                style="padding: 30px; padding-bottom: 40px"
+              >
+                <ngb-carousel>
+                  <ng-template
+                    class="images"
+                    ngbSlide
+                    *ngFor="let image of project.pathImage"
+                  >
+                    <div class="picsum-img-wrapper">
+                      <img
+                        src="assets/game_screenshots/{{ image }}"
+                        alt="Random first slide"
+                      />
+                    </div>
+                  </ng-template>
 
-
-
-                              <ng-template class="images" ngbSlide *ngFor="let image of project.pathImage">
-                                <div class="picsum-img-wrapper">
-                                    <img src="assets/projects image/{{project.title}}/{{image}}" alt="Random first slide" />
-                                </div>
-                                <div class="carousel-caption">
-                                    <h3> First slide label</h3>
-                                    <p>
-                                        Nulla vitae elit libero, a pharetra augue mollis interdum.
-                                    </p>
-                                </div>
-                            </ng-template>
-
-                           <!-- <ng-template class="images" ngbSlide>
+                  <!-- <ng-template class="images" ngbSlide>
                                 <div class="picsum-img-wrapper">
                                     <img src="assets/projects image/{{project.title}}/thumbnail.jpg" alt="Random first slide" />
                                 </div>
@@ -101,13 +121,12 @@
 
                             </ng-template>
                             -->
-                        </ngb-carousel>
-                    </div>
-
-                </div>
+                </ngb-carousel>
+              </div>
             </div>
+          </div>
         </ng-template>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 </div>
